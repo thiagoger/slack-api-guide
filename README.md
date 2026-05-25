@@ -1,16 +1,19 @@
-# Slack API Scraping Guide
+# Slack Data Extraction Guide
 
 [![Python](https://img.shields.io/badge/python-3.9%2B-blue.svg)](https://www.python.org)
 [![Slack API](https://img.shields.io/badge/Slack-API-4A154B.svg?logo=slack)](https://api.slack.com)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
-> **A complete, beginner-friendly guide to collecting data from Slack using the official API.**
+> Pull real data out of Slack with the official API, without losing a weekend to OAuth scopes and 403s.
 
-This guide will walk you through setting up Slack API access and collecting data like:
-- User presence status (online/away/do not disturb)
-- Messages from channels
-- User information
-- Search results
+The first time I scripted against Slack, I burned hours on the same walls everyone hits: which token type, which scopes, why search returns nothing. So I wrote down the path that actually works, end to end, with runnable Python. Follow it and you'll be pulling this in about 15 minutes:
+
+- who's online, away, or on do-not-disturb
+- messages from any channel you're in
+- user profiles and directory info
+- search results across the workspace
+
+No scraping, no hacks. Just the official API, explained like a human would.
 
 ---
 
@@ -165,8 +168,8 @@ SLACK_USER_TOKEN=xoxp-your-user-token-here
 ### 4.1 Clone this repository
 
 ```bash
-git clone https://github.com/thiagotbx123/slack-api-guide.git
-cd slack-api-guide
+git clone https://github.com/thiagoger/slack-data-extraction-guide.git
+cd slack-data-extraction-guide
 ```
 
 ### 4.2 Create virtual environment
@@ -322,7 +325,7 @@ python slack_scraper.py --search "quarterly report" --limit 20
 ## Project Structure
 
 ```
-slack-api-guide/
+slack-data-extraction-guide/
 ├── README.md           # This file
 ├── .env.example        # Template for tokens
 ├── .gitignore          # Ignores .env and venv
