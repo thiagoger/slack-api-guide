@@ -1,5 +1,9 @@
 # Slack API Scraping Guide
 
+[![Python](https://img.shields.io/badge/python-3.9%2B-blue.svg)](https://www.python.org)
+[![Slack API](https://img.shields.io/badge/Slack-API-4A154B.svg?logo=slack)](https://api.slack.com)
+[![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+
 > **A complete, beginner-friendly guide to collecting data from Slack using the official API.**
 
 This guide will walk you through setting up Slack API access and collecting data like:
